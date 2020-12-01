@@ -14,6 +14,7 @@ import (
 var (
 	valEd25519   = []string{ABCIPubKeyTypeEd25519}
 	valSecp256k1 = []string{ABCIPubKeyTypeSecp256k1}
+	valSm2   =     []string{ABCIPubKeyTypeSm2}
 )
 
 func TestConsensusParamsValidation(t *testing.T) {
@@ -112,6 +113,25 @@ func TestConsensusParamsUpdate(t *testing.T) {
 		// fine updates
 		{
 			makeParams(1, 2, 10, 3, valEd25519),
+			&abci.ConsensusParams{
+				Block: &abci.BlockParams{
+					MaxBytes: 100,
+					MaxGas:   200,
+				},
+				Evidence: &abci.EvidenceParams{
+					MaxAgeNumBlocks: 300,
+					MaxAgeDuration:  time.Duration(300),
+				},
+				Validator: &abci.ValidatorParams{
+					PubKeyTypes: valSecp256k1,
+				},
+			},
+			makeParams(100, 200, 10, 300, valSecp256k1),
+		},
+
+		// fine updates sm2
+		{
+			makeParams(1, 2, 10, 3, valSm2),
 			&abci.ConsensusParams{
 				Block: &abci.BlockParams{
 					MaxBytes: 100,

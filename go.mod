@@ -24,9 +24,12 @@ require (
 	github.com/snikch/goodman v0.0.0-20171125024755-10e37e294daa
 	github.com/spf13/cobra v1.0.0
 	github.com/spf13/viper v1.6.3
+	github.com/square/certstrap v1.2.0 // indirect
 	github.com/stretchr/testify v1.5.1
+	github.com/tecbot/gorocksdb v0.0.0-20191217155057-f0fad39f321c // indirect
 	github.com/tendermint/go-amino v0.14.1
 	github.com/tendermint/tm-db v0.5.1
+	github.com/tjfoc/gmsm v1.3.2
 	golang.org/x/crypto v0.0.0-20200406173513-056763e48d71
 	golang.org/x/net v0.0.0-20200324143707-d3edc9973b7e
 	google.golang.org/grpc v1.28.1

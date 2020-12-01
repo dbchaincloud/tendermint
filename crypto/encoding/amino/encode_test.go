@@ -1,6 +1,7 @@
 package cryptoamino
 
 import (
+	"github.com/tendermint/tendermint/crypto/sm2"
 	"os"
 	"reflect"
 	"testing"
@@ -62,9 +63,11 @@ func ExamplePrintRegisteredTypes() {
 	//| PubKeySr25519 | tendermint/PubKeySr25519 | 0x0DFB1005 | 0x20 |  |
 	//| PubKeySecp256k1 | tendermint/PubKeySecp256k1 | 0xEB5AE987 | 0x21 |  |
 	//| PubKeyMultisigThreshold | tendermint/PubKeyMultisigThreshold | 0x22C1F7E2 | variable |  |
+	//| PubKeySm2 | tendermint/PubKeySm2 | 0xE7CD5A35 | 0x21 |  |
 	//| PrivKeyEd25519 | tendermint/PrivKeyEd25519 | 0xA3288910 | 0x40 |  |
 	//| PrivKeySr25519 | tendermint/PrivKeySr25519 | 0x2F82D78B | 0x20 |  |
 	//| PrivKeySecp256k1 | tendermint/PrivKeySecp256k1 | 0xE1B0F79B | 0x20 |  |
+	//| PrivKeySm2 | tendermint/PrivKeySm2 | 0x5D16439B | 0x20 |  |
 }
 
 func TestKeyEncodings(t *testing.T) {
@@ -89,6 +92,13 @@ func TestKeyEncodings(t *testing.T) {
 			privSize: 37,
 			pubSize:  38,
 			sigSize:  65,
+		},
+		{
+			privKey:  sm2.GenPrivKey(),
+			privSize: 37,
+			pubSize:  38,
+			sigSize:  65,
+
 		},
 	}
 
@@ -152,6 +162,7 @@ func TestPubkeyAminoName(t *testing.T) {
 		{sr25519.PubKeySr25519{}, sr25519.PubKeyAminoName, true},
 		{secp256k1.PubKeySecp256k1{}, secp256k1.PubKeyAminoName, true},
 		{multisig.PubKeyMultisigThreshold{}, multisig.PubKeyMultisigThresholdAminoRoute, true},
+		{sm2.PubKeySm2{}, sm2.PubKeyAminoName, true},
 	}
 	for i, tc := range tests {
 		got, found := PubkeyAminoName(cdc, tc.key)
@@ -233,4 +244,5 @@ func TestRegisterKeyType(t *testing.T) {
 	nameTable[reflect.TypeOf(sr25519.PubKeySr25519{})] = sr25519.PubKeyAminoName
 	nameTable[reflect.TypeOf(secp256k1.PubKeySecp256k1{})] = secp256k1.PubKeyAminoName
 	nameTable[reflect.TypeOf(multisig.PubKeyMultisigThreshold{})] = multisig.PubKeyMultisigThresholdAminoRoute
+	nameTable[reflect.TypeOf(sm2.PubKeySm2{})] = sm2.PubKeyAminoName
 }

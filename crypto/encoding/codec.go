@@ -3,6 +3,7 @@ package encoding
 import (
 	"errors"
 	"fmt"
+	"github.com/tendermint/tendermint/crypto/sm2"
 
 	"github.com/tendermint/tendermint/crypto"
 	"github.com/tendermint/tendermint/crypto/ed25519"
@@ -20,6 +21,12 @@ func PubKeyToProto(k crypto.PubKey) (pc.PublicKey, error) {
 		kp = pc.PublicKey{
 			Sum: &pc.PublicKey_Ed25519{
 				Ed25519: k[:],
+			},
+		}
+	case sm2.PubKeySm2:
+		kp = pc.PublicKey{
+			Sum: &pc.PublicKey_Sm2{
+				Sm2: k[:],
 			},
 		}
 	default:
@@ -42,6 +49,15 @@ func PubKeyFromProto(k *pc.PublicKey) (crypto.PubKey, error) {
 		var pk ed25519.PubKeyEd25519
 		copy(pk[:], k.Ed25519)
 		return pk, nil
+
+	case *pc.PublicKey_Sm2:
+		if len(k.Sm2) != sm2.PubKeySize {
+			return nil, fmt.Errorf("invalid size for PubKeyEd25519. Got %d, expected %d",
+				len(k.Sm2), sm2.PubKeySize)
+		}
+		var pk sm2.PubKeySm2
+		copy(pk[:], k.Sm2)
+		return pk, nil
 	default:
 		return nil, fmt.Errorf("fromproto: key type %v is not supported", k)
 	}
@@ -55,6 +71,13 @@ func PrivKeyToProto(k crypto.PrivKey) (pc.PrivateKey, error) {
 		kp = pc.PrivateKey{
 			Sum: &pc.PrivateKey_Ed25519{
 				Ed25519: k[:],
+			},
+		}
+
+	case sm2.PrivKeySm2:
+		kp = pc.PrivateKey{
+			Sum: &pc.PrivateKey_Sm2{
+				Sm2: k[:],
 			},
 		}
 	default:
@@ -74,6 +97,16 @@ func PrivKeyFromProto(k pc.PrivateKey) (crypto.PrivKey, error) {
 		}
 		var pk ed25519.PrivKeyEd25519
 		copy(pk[:], k.Ed25519)
+		return pk, nil
+
+	case *pc.PrivateKey_Sm2:
+
+		if len(k.Sm2) != sm2.PrivKeySize {
+			return nil, fmt.Errorf("invalid size for PubKeyEd25519. Got %d, expected %d",
+				len(k.Sm2), sm2.PrivKeySize )
+		}
+		var pk sm2.PrivKeySm2
+		copy(pk[:], k.Sm2)
 		return pk, nil
 	default:
 		return nil, errors.New("fromproto: key type not supported")

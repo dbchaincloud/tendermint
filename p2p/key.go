@@ -4,10 +4,10 @@ import (
 	"bytes"
 	"encoding/hex"
 	"fmt"
+	"github.com/tendermint/tendermint/crypto/algo"
 	"io/ioutil"
 
 	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/crypto/ed25519"
 	tmos "github.com/tendermint/tendermint/libs/os"
 )
 
@@ -71,7 +71,7 @@ func LoadNodeKey(filePath string) (*NodeKey, error) {
 }
 
 func genNodeKey(filePath string) (*NodeKey, error) {
-	privKey := ed25519.GenPrivKey()
+	privKey := algo.GenPrivKey()
 	nodeKey := &NodeKey{
 		PrivKey: privKey,
 	}

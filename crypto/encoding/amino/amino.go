@@ -1,6 +1,7 @@
 package cryptoamino
 
 import (
+	"github.com/tendermint/tendermint/crypto/sm2"
 	"reflect"
 
 	amino "github.com/tendermint/go-amino"
@@ -35,6 +36,8 @@ func init() {
 	nameTable[reflect.TypeOf(sr25519.PubKeySr25519{})] = sr25519.PubKeyAminoName
 	nameTable[reflect.TypeOf(secp256k1.PubKeySecp256k1{})] = secp256k1.PubKeyAminoName
 	nameTable[reflect.TypeOf(multisig.PubKeyMultisigThreshold{})] = multisig.PubKeyMultisigThresholdAminoRoute
+	nameTable[reflect.TypeOf(sm2.PubKeySm2{})] = sm2.PubKeyAminoName
+
 }
 
 // PubkeyAminoName returns the amino route of a pubkey
@@ -57,6 +60,8 @@ func RegisterAmino(cdc *amino.Codec) {
 		secp256k1.PubKeyAminoName, nil)
 	cdc.RegisterConcrete(multisig.PubKeyMultisigThreshold{},
 		multisig.PubKeyMultisigThresholdAminoRoute, nil)
+	cdc.RegisterConcrete(sm2.PubKeySm2{},
+		sm2.PubKeyAminoName, nil)
 
 	cdc.RegisterInterface((*crypto.PrivKey)(nil), nil)
 	cdc.RegisterConcrete(ed25519.PrivKeyEd25519{},
@@ -65,6 +70,8 @@ func RegisterAmino(cdc *amino.Codec) {
 		sr25519.PrivKeyAminoName, nil)
 	cdc.RegisterConcrete(secp256k1.PrivKeySecp256k1{},
 		secp256k1.PrivKeyAminoName, nil)
+	cdc.RegisterConcrete(sm2.PrivKeySm2{},
+		sm2.PrivKeyAminoName, nil)
 }
 
 // RegisterKeyType registers an external key type to allow decoding it from bytes
