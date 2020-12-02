@@ -45,7 +45,7 @@ var ABCIPubKeyTypesToAminoNames = map[string]string{
 	ABCIPubKeyTypeEd25519:   ed25519.PubKeyAminoName,
 	ABCIPubKeyTypeSr25519:   sr25519.PubKeyAminoName,
 	ABCIPubKeyTypeSecp256k1: secp256k1.PubKeyAminoName,
-	ABCIPubKeyTypeSm2:   sm2.PubKeyAminoName,
+	ABCIPubKeyTypeSm2:       sm2.PubKeyAminoName,
 }
 
 //-------------------------------------------------------
