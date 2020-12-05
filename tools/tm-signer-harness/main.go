@@ -3,16 +3,16 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/tendermint/tendermint/crypto/algo"
+	"github.com/dbchaincloud/tendermint/crypto/algo"
 	"io/ioutil"
 	"os"
 	"path/filepath"
 	"time"
 
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/privval"
-	"github.com/tendermint/tendermint/tools/tm-signer-harness/internal"
-	"github.com/tendermint/tendermint/version"
+	"github.com/dbchaincloud/tendermint/libs/log"
+	"github.com/dbchaincloud/tendermint/privval"
+	"github.com/dbchaincloud/tendermint/tools/tm-signer-harness/internal"
+	"github.com/dbchaincloud/tendermint/version"
 )
 
 const (

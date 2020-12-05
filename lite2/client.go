@@ -9,11 +9,11 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/tendermint/tendermint/libs/log"
-	tmmath "github.com/tendermint/tendermint/libs/math"
-	"github.com/tendermint/tendermint/lite2/provider"
-	"github.com/tendermint/tendermint/lite2/store"
-	"github.com/tendermint/tendermint/types"
+	"github.com/dbchaincloud/tendermint/libs/log"
+	tmmath "github.com/dbchaincloud/tendermint/libs/math"
+	"github.com/dbchaincloud/tendermint/lite2/provider"
+	"github.com/dbchaincloud/tendermint/lite2/store"
+	"github.com/dbchaincloud/tendermint/types"
 )
 
 type mode byte

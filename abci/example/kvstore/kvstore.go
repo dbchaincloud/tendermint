@@ -8,10 +8,10 @@ import (
 
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/tendermint/tendermint/abci/example/code"
-	"github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/libs/kv"
-	"github.com/tendermint/tendermint/version"
+	"github.com/dbchaincloud/tendermint/abci/example/code"
+	"github.com/dbchaincloud/tendermint/abci/types"
+	"github.com/dbchaincloud/tendermint/libs/kv"
+	"github.com/dbchaincloud/tendermint/version"
 )
 
 var (

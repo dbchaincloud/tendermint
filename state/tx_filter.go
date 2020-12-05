@@ -1,8 +1,8 @@
 package state
 
 import (
-	mempl "github.com/tendermint/tendermint/mempool"
-	"github.com/tendermint/tendermint/types"
+	mempl "github.com/dbchaincloud/tendermint/mempool"
+	"github.com/dbchaincloud/tendermint/types"
 )
 
 // TxPreCheck returns a function to filter transactions before processing.

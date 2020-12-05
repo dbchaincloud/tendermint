@@ -4,16 +4,16 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
-	"github.com/tendermint/tendermint/crypto/algo"
+	"github.com/dbchaincloud/tendermint/crypto/algo"
 	"io/ioutil"
 	"time"
 
-	"github.com/tendermint/tendermint/crypto"
-	tmbytes "github.com/tendermint/tendermint/libs/bytes"
-	tmos "github.com/tendermint/tendermint/libs/os"
-	"github.com/tendermint/tendermint/libs/tempfile"
-	"github.com/tendermint/tendermint/types"
-	tmtime "github.com/tendermint/tendermint/types/time"
+	"github.com/dbchaincloud/tendermint/crypto"
+	tmbytes "github.com/dbchaincloud/tendermint/libs/bytes"
+	tmos "github.com/dbchaincloud/tendermint/libs/os"
+	"github.com/dbchaincloud/tendermint/libs/tempfile"
+	"github.com/dbchaincloud/tendermint/types"
+	tmtime "github.com/dbchaincloud/tendermint/types/time"
 )
 
 // TODO: type ?

@@ -1,12 +1,12 @@
 package mock
 
 import (
-	"github.com/tendermint/tendermint/crypto/algo"
+	"github.com/dbchaincloud/tendermint/crypto/algo"
 	"net"
 
-	"github.com/tendermint/tendermint/libs/service"
-	"github.com/tendermint/tendermint/p2p"
-	"github.com/tendermint/tendermint/p2p/conn"
+	"github.com/dbchaincloud/tendermint/libs/service"
+	"github.com/dbchaincloud/tendermint/p2p"
+	"github.com/dbchaincloud/tendermint/p2p/conn"
 )
 
 type Peer struct {

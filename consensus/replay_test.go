@@ -19,19 +19,19 @@ import (
 
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/tendermint/tendermint/abci/example/kvstore"
-	abci "github.com/tendermint/tendermint/abci/types"
-	cfg "github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/libs/log"
-	tmrand "github.com/tendermint/tendermint/libs/rand"
-	mempl "github.com/tendermint/tendermint/mempool"
-	"github.com/tendermint/tendermint/mock"
-	"github.com/tendermint/tendermint/privval"
-	"github.com/tendermint/tendermint/proxy"
-	sm "github.com/tendermint/tendermint/state"
-	"github.com/tendermint/tendermint/types"
-	"github.com/tendermint/tendermint/version"
+	"github.com/dbchaincloud/tendermint/abci/example/kvstore"
+	abci "github.com/dbchaincloud/tendermint/abci/types"
+	cfg "github.com/dbchaincloud/tendermint/config"
+	"github.com/dbchaincloud/tendermint/crypto"
+	"github.com/dbchaincloud/tendermint/libs/log"
+	tmrand "github.com/dbchaincloud/tendermint/libs/rand"
+	mempl "github.com/dbchaincloud/tendermint/mempool"
+	"github.com/dbchaincloud/tendermint/mock"
+	"github.com/dbchaincloud/tendermint/privval"
+	"github.com/dbchaincloud/tendermint/proxy"
+	sm "github.com/dbchaincloud/tendermint/state"
+	"github.com/dbchaincloud/tendermint/types"
+	"github.com/dbchaincloud/tendermint/version"
 )
 
 func TestMain(m *testing.M) {

@@ -9,13 +9,13 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/libs/service"
+	"github.com/dbchaincloud/tendermint/libs/log"
+	"github.com/dbchaincloud/tendermint/libs/service"
 
-	abcicli "github.com/tendermint/tendermint/abci/client"
-	"github.com/tendermint/tendermint/abci/example/code"
-	abciserver "github.com/tendermint/tendermint/abci/server"
-	"github.com/tendermint/tendermint/abci/types"
+	abcicli "github.com/dbchaincloud/tendermint/abci/client"
+	"github.com/dbchaincloud/tendermint/abci/example/code"
+	abciserver "github.com/dbchaincloud/tendermint/abci/server"
+	"github.com/dbchaincloud/tendermint/abci/types"
 )
 
 const (

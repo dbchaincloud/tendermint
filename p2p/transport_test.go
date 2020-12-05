@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tendermint/tendermint/crypto/ed25519"
-	"github.com/tendermint/tendermint/p2p/conn"
+	"github.com/dbchaincloud/tendermint/crypto/ed25519"
+	"github.com/dbchaincloud/tendermint/p2p/conn"
 )
 
 var defaultNodeName = "host_peer"

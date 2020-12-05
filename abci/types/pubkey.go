@@ -1,6 +1,6 @@
 package types
 
-import "github.com/tendermint/tendermint/crypto/algo"
+import "github.com/dbchaincloud/tendermint/crypto/algo"
 
 const (
 	PubKeyEd25519 = "ed25519"

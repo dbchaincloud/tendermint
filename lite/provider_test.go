@@ -9,9 +9,9 @@ import (
 
 	dbm "github.com/tendermint/tm-db"
 
-	log "github.com/tendermint/tendermint/libs/log"
-	lerr "github.com/tendermint/tendermint/lite/errors"
-	"github.com/tendermint/tendermint/types"
+	log "github.com/dbchaincloud/tendermint/libs/log"
+	lerr "github.com/dbchaincloud/tendermint/lite/errors"
+	"github.com/dbchaincloud/tendermint/types"
 )
 
 // missingProvider doesn't store anything, always a miss.

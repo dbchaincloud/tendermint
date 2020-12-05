@@ -8,11 +8,11 @@ import (
 
 	"github.com/tendermint/go-amino"
 
-	"github.com/tendermint/tendermint/behaviour"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/p2p"
-	"github.com/tendermint/tendermint/state"
-	"github.com/tendermint/tendermint/types"
+	"github.com/dbchaincloud/tendermint/behaviour"
+	"github.com/dbchaincloud/tendermint/libs/log"
+	"github.com/dbchaincloud/tendermint/p2p"
+	"github.com/dbchaincloud/tendermint/state"
+	"github.com/dbchaincloud/tendermint/types"
 )
 
 //-------------------------------------

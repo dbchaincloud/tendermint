@@ -6,10 +6,10 @@ import (
 
 	"github.com/pkg/errors"
 
-	tmpubsub "github.com/tendermint/tendermint/libs/pubsub"
-	tmquery "github.com/tendermint/tendermint/libs/pubsub/query"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
-	rpctypes "github.com/tendermint/tendermint/rpc/jsonrpc/types"
+	tmpubsub "github.com/dbchaincloud/tendermint/libs/pubsub"
+	tmquery "github.com/dbchaincloud/tendermint/libs/pubsub/query"
+	ctypes "github.com/dbchaincloud/tendermint/rpc/core/types"
+	rpctypes "github.com/dbchaincloud/tendermint/rpc/jsonrpc/types"
 )
 
 const (

@@ -9,10 +9,10 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/tendermint/tendermint/crypto"
-	tmbytes "github.com/tendermint/tendermint/libs/bytes"
-	tmos "github.com/tendermint/tendermint/libs/os"
-	tmtime "github.com/tendermint/tendermint/types/time"
+	"github.com/dbchaincloud/tendermint/crypto"
+	tmbytes "github.com/dbchaincloud/tendermint/libs/bytes"
+	tmos "github.com/dbchaincloud/tendermint/libs/os"
+	tmtime "github.com/dbchaincloud/tendermint/types/time"
 )
 
 const (

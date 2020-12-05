@@ -40,7 +40,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/tendermint/tendermint/libs/service"
+	"github.com/dbchaincloud/tendermint/libs/service"
 )
 
 type operation int

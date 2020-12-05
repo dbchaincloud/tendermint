@@ -2,16 +2,16 @@ package types
 
 import (
 	"fmt"
-	"github.com/tendermint/tendermint/crypto/algo"
-	"github.com/tendermint/tendermint/crypto/sm2"
+	"github.com/dbchaincloud/tendermint/crypto/algo"
+	"github.com/dbchaincloud/tendermint/crypto/sm2"
 	"reflect"
 	"time"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/crypto/ed25519"
-	"github.com/tendermint/tendermint/crypto/secp256k1"
-	"github.com/tendermint/tendermint/crypto/sr25519"
+	abci "github.com/dbchaincloud/tendermint/abci/types"
+	"github.com/dbchaincloud/tendermint/crypto"
+	"github.com/dbchaincloud/tendermint/crypto/ed25519"
+	"github.com/dbchaincloud/tendermint/crypto/secp256k1"
+	"github.com/dbchaincloud/tendermint/crypto/sr25519"
 )
 
 //-------------------------------------------------------

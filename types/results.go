@@ -1,16 +1,16 @@
 package types
 
 import (
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/crypto/merkle"
-	"github.com/tendermint/tendermint/libs/bytes"
+	abci "github.com/dbchaincloud/tendermint/abci/types"
+	"github.com/dbchaincloud/tendermint/crypto/merkle"
+	"github.com/dbchaincloud/tendermint/libs/bytes"
 )
 
 //-----------------------------------------------------------------------------
 
 // ABCIResult is the deterministic component of a ResponseDeliverTx.
 // TODO: add tags and other fields
-// https://github.com/tendermint/tendermint/issues/1007
+// https://github.com/dbchaincloud/tendermint/issues/1007
 type ABCIResult struct {
 	Code uint32         `json:"code"`
 	Data bytes.HexBytes `json:"data"`

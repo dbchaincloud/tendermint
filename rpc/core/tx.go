@@ -6,12 +6,12 @@ import (
 
 	"github.com/pkg/errors"
 
-	tmmath "github.com/tendermint/tendermint/libs/math"
-	tmquery "github.com/tendermint/tendermint/libs/pubsub/query"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
-	rpctypes "github.com/tendermint/tendermint/rpc/jsonrpc/types"
-	"github.com/tendermint/tendermint/state/txindex/null"
-	"github.com/tendermint/tendermint/types"
+	tmmath "github.com/dbchaincloud/tendermint/libs/math"
+	tmquery "github.com/dbchaincloud/tendermint/libs/pubsub/query"
+	ctypes "github.com/dbchaincloud/tendermint/rpc/core/types"
+	rpctypes "github.com/dbchaincloud/tendermint/rpc/jsonrpc/types"
+	"github.com/dbchaincloud/tendermint/state/txindex/null"
+	"github.com/dbchaincloud/tendermint/types"
 )
 
 // Tx allows you to query the transaction results. `nil` could mean the

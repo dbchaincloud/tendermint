@@ -11,10 +11,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tendermint/tendermint/abci/types"
-	tmnet "github.com/tendermint/tendermint/libs/net"
-	"github.com/tendermint/tendermint/libs/service"
-	"github.com/tendermint/tendermint/libs/timer"
+	"github.com/dbchaincloud/tendermint/abci/types"
+	tmnet "github.com/dbchaincloud/tendermint/libs/net"
+	"github.com/dbchaincloud/tendermint/libs/service"
+	"github.com/dbchaincloud/tendermint/libs/timer"
 )
 
 const reqQueueSize = 256 // TODO make configurable

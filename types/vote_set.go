@@ -8,7 +8,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/tendermint/tendermint/libs/bits"
+	"github.com/dbchaincloud/tendermint/libs/bits"
 )
 
 const (

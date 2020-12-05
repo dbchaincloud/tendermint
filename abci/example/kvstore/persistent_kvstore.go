@@ -4,16 +4,16 @@ import (
 	"bytes"
 	"encoding/base64"
 	"fmt"
-	"github.com/tendermint/tendermint/crypto/algo"
+	"github.com/dbchaincloud/tendermint/crypto/algo"
 	"strconv"
 	"strings"
 
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/tendermint/tendermint/abci/example/code"
-	"github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/libs/log"
-	tmtypes "github.com/tendermint/tendermint/types"
+	"github.com/dbchaincloud/tendermint/abci/example/code"
+	"github.com/dbchaincloud/tendermint/abci/types"
+	"github.com/dbchaincloud/tendermint/libs/log"
+	tmtypes "github.com/dbchaincloud/tendermint/types"
 )
 
 const (

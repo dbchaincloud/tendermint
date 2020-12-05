@@ -1,9 +1,9 @@
 package kvstore
 
 import (
-	"github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/crypto/algo"
-	tmrand "github.com/tendermint/tendermint/libs/rand"
+	"github.com/dbchaincloud/tendermint/abci/types"
+	"github.com/dbchaincloud/tendermint/crypto/algo"
+	tmrand "github.com/dbchaincloud/tendermint/libs/rand"
 )
 
 // RandVal creates one random validator, with a key derived

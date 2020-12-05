@@ -2,15 +2,15 @@ package main
 
 import (
 	"flag"
-	"github.com/tendermint/tendermint/crypto/algo"
+	"github.com/dbchaincloud/tendermint/crypto/algo"
 	"os"
 	"time"
 
-	"github.com/tendermint/tendermint/libs/log"
-	tmnet "github.com/tendermint/tendermint/libs/net"
-	tmos "github.com/tendermint/tendermint/libs/os"
+	"github.com/dbchaincloud/tendermint/libs/log"
+	tmnet "github.com/dbchaincloud/tendermint/libs/net"
+	tmos "github.com/dbchaincloud/tendermint/libs/os"
 
-	"github.com/tendermint/tendermint/privval"
+	"github.com/dbchaincloud/tendermint/privval"
 )
 
 func main() {

@@ -6,13 +6,13 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/tendermint/tendermint/lite2/provider"
-	rpcclient "github.com/tendermint/tendermint/rpc/client"
-	rpchttp "github.com/tendermint/tendermint/rpc/client/http"
-	"github.com/tendermint/tendermint/types"
+	"github.com/dbchaincloud/tendermint/lite2/provider"
+	rpcclient "github.com/dbchaincloud/tendermint/rpc/client"
+	rpchttp "github.com/dbchaincloud/tendermint/rpc/client/http"
+	"github.com/dbchaincloud/tendermint/types"
 )
 
-// This is very brittle, see: https://github.com/tendermint/tendermint/issues/4740
+// This is very brittle, see: https://github.com/dbchaincloud/tendermint/issues/4740
 var regexpMissingHeight = regexp.MustCompile(`height \d+ (must be less than or equal to|is not available)`)
 
 // SignStatusClient combines a SignClient and StatusClient.

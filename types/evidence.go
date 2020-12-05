@@ -9,11 +9,11 @@ import (
 	"github.com/pkg/errors"
 	amino "github.com/tendermint/go-amino"
 
-	"github.com/tendermint/tendermint/crypto"
-	cryptoenc "github.com/tendermint/tendermint/crypto/encoding"
-	"github.com/tendermint/tendermint/crypto/merkle"
-	"github.com/tendermint/tendermint/crypto/tmhash"
-	tmproto "github.com/tendermint/tendermint/proto/types"
+	"github.com/dbchaincloud/tendermint/crypto"
+	cryptoenc "github.com/dbchaincloud/tendermint/crypto/encoding"
+	"github.com/dbchaincloud/tendermint/crypto/merkle"
+	"github.com/dbchaincloud/tendermint/crypto/tmhash"
+	tmproto "github.com/dbchaincloud/tendermint/proto/types"
 )
 
 const (
@@ -199,7 +199,7 @@ const (
 // allowed in the block and their maximum total size (limitted to 1/10th
 // of the maximum block size).
 // TODO: change to a constant, or to a fraction of the validator set size.
-// See https://github.com/tendermint/tendermint/issues/2590
+// See https://github.com/dbchaincloud/tendermint/issues/2590
 func MaxEvidencePerBlock(blockMaxBytes int64) (int64, int64) {
 	maxBytes := blockMaxBytes / MaxEvidenceBytesDenominator
 	maxNum := maxBytes / MaxEvidenceBytes

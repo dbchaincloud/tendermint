@@ -4,8 +4,8 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	"github.com/tendermint/tendermint/abci/example/code"
-	"github.com/tendermint/tendermint/abci/types"
+	"github.com/dbchaincloud/tendermint/abci/example/code"
+	"github.com/dbchaincloud/tendermint/abci/types"
 )
 
 type Application struct {

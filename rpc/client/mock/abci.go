@@ -1,12 +1,12 @@
 package mock
 
 import (
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/libs/bytes"
-	"github.com/tendermint/tendermint/proxy"
-	"github.com/tendermint/tendermint/rpc/client"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
-	"github.com/tendermint/tendermint/types"
+	abci "github.com/dbchaincloud/tendermint/abci/types"
+	"github.com/dbchaincloud/tendermint/libs/bytes"
+	"github.com/dbchaincloud/tendermint/proxy"
+	"github.com/dbchaincloud/tendermint/rpc/client"
+	ctypes "github.com/dbchaincloud/tendermint/rpc/core/types"
+	"github.com/dbchaincloud/tendermint/types"
 )
 
 // ABCIApp will send all abci related request to the named app,

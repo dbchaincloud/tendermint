@@ -9,10 +9,10 @@ import (
 
 	dbm "github.com/tendermint/tm-db"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/libs/kv"
-	"github.com/tendermint/tendermint/libs/pubsub/query"
-	"github.com/tendermint/tendermint/types"
+	abci "github.com/dbchaincloud/tendermint/abci/types"
+	"github.com/dbchaincloud/tendermint/libs/kv"
+	"github.com/dbchaincloud/tendermint/libs/pubsub/query"
+	"github.com/dbchaincloud/tendermint/types"
 )
 
 func BenchmarkTxSearch(b *testing.B) {

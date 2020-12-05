@@ -17,11 +17,11 @@ import (
 
 	amino "github.com/tendermint/go-amino"
 
-	flow "github.com/tendermint/tendermint/libs/flowrate"
-	"github.com/tendermint/tendermint/libs/log"
-	tmmath "github.com/tendermint/tendermint/libs/math"
-	"github.com/tendermint/tendermint/libs/service"
-	"github.com/tendermint/tendermint/libs/timer"
+	flow "github.com/dbchaincloud/tendermint/libs/flowrate"
+	"github.com/dbchaincloud/tendermint/libs/log"
+	tmmath "github.com/dbchaincloud/tendermint/libs/math"
+	"github.com/dbchaincloud/tendermint/libs/service"
+	"github.com/dbchaincloud/tendermint/libs/timer"
 )
 
 const (
@@ -603,7 +603,7 @@ FOR_LOOP:
 		switch pkt := packet.(type) {
 		case PacketPing:
 			// TODO: prevent abuse, as they cause flush()'s.
-			// https://github.com/tendermint/tendermint/issues/1190
+			// https://github.com/dbchaincloud/tendermint/issues/1190
 			c.Logger.Debug("Receive Ping")
 			select {
 			case c.pong <- struct{}{}:

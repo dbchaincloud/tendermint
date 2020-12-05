@@ -4,11 +4,11 @@ import (
 	"bytes"
 	"encoding/hex"
 	"fmt"
-	"github.com/tendermint/tendermint/crypto/algo"
+	"github.com/dbchaincloud/tendermint/crypto/algo"
 	"io/ioutil"
 
-	"github.com/tendermint/tendermint/crypto"
-	tmos "github.com/tendermint/tendermint/libs/os"
+	"github.com/dbchaincloud/tendermint/crypto"
+	tmos "github.com/dbchaincloud/tendermint/libs/os"
 )
 
 // ID is a hex-encoded crypto.Address

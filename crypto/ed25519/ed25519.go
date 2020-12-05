@@ -9,8 +9,8 @@ import (
 	amino "github.com/tendermint/go-amino"
 	"golang.org/x/crypto/ed25519"
 
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/crypto/tmhash"
+	"github.com/dbchaincloud/tendermint/crypto"
+	"github.com/dbchaincloud/tendermint/crypto/tmhash"
 )
 
 //-------------------------------------

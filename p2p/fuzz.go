@@ -5,8 +5,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tendermint/tendermint/config"
-	tmrand "github.com/tendermint/tendermint/libs/rand"
+	"github.com/dbchaincloud/tendermint/config"
+	tmrand "github.com/dbchaincloud/tendermint/libs/rand"
 )
 
 // FuzzedConnection wraps any net.Conn and depending on the mode either delays

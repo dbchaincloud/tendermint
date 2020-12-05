@@ -1,10 +1,10 @@
 package core
 
 import (
-	"github.com/tendermint/tendermint/evidence"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
-	rpctypes "github.com/tendermint/tendermint/rpc/jsonrpc/types"
-	"github.com/tendermint/tendermint/types"
+	"github.com/dbchaincloud/tendermint/evidence"
+	ctypes "github.com/dbchaincloud/tendermint/rpc/core/types"
+	rpctypes "github.com/dbchaincloud/tendermint/rpc/jsonrpc/types"
+	"github.com/dbchaincloud/tendermint/types"
 )
 
 // BroadcastEvidence broadcasts evidence of the misbehavior.

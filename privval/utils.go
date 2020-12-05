@@ -2,13 +2,13 @@ package privval
 
 import (
 	"fmt"
-	"github.com/tendermint/tendermint/crypto/algo"
+	"github.com/dbchaincloud/tendermint/crypto/algo"
 	"net"
 
 	"github.com/pkg/errors"
 
-	"github.com/tendermint/tendermint/libs/log"
-	tmnet "github.com/tendermint/tendermint/libs/net"
+	"github.com/dbchaincloud/tendermint/libs/log"
+	tmnet "github.com/dbchaincloud/tendermint/libs/net"
 )
 
 // IsConnTimeout returns a boolean indicating whether the error is known to

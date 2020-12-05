@@ -11,8 +11,8 @@ import (
 	"github.com/tjfoc/gmsm/sm2"
 
 	amino "github.com/tendermint/go-amino"
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/crypto/tmhash"
+	"github.com/dbchaincloud/tendermint/crypto"
+	"github.com/dbchaincloud/tendermint/crypto/tmhash"
 )
 
 const (

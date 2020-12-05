@@ -1,7 +1,7 @@
 package rpc
 
 import (
-	"github.com/tendermint/tendermint/crypto/merkle"
+	"github.com/dbchaincloud/tendermint/crypto/merkle"
 )
 
 func defaultProofRuntime() *merkle.ProofRuntime {
